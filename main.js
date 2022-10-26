@@ -42,11 +42,17 @@ document.getElementById('cards-place').innerHTML = posts.map(post =>
     </div>
     <img class="post-img" src="${post.post}" alt="" srcset="">
     <div class="post-icons">
-      <img class="post-icon" src="/images/icon-heart.png" alt="heart icon">
-      <img class="post-icon" src="/images/icon-comment.png" alt="comment icon">
-      <img class="post-icon" src="/images/icon-dm.png" alt="dm icon">
+      <div id="heart"><img class="post-icon" src="/images/icon-heart.png" alt="heart icon"></div>
+      <div><img class="post-icon" src="/images/icon-comment.png" alt="comment icon"></div>
+      <div><img class="post-icon" src="/images/icon-dm.png" alt="dm icon"></div>
     </div>
-    <div class="post-likes"><p>${post.likes} likes</p></div>
+    <div class="post-likes"><p id="likes">${post.likes} likes</p></div>
     <div class="post-comments"><p><span>${post.username}</span> ${post.comment}</p></div>
   </div>
   `).join('')
+
+const heart = document.getElementById('heart')
+
+heart.addEventListener('click', () => {
+  heart.classList.toggle('red')
+})
