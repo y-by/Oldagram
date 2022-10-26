@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  background: #F5F5F5;
+}
+
+.container {
+  max-width: 375px;
+  height: fit-content;
+  margin: 0 auto;
+  
+}
+
+header {
+  padding-inline: .625rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 67px;
+  background: #FFFFFF;
+  border-bottom: #C6C6C6 solid 1px;
+}
+
+.logo {
+  width: 127px;
+}
+
+.user-img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50px;
+}
+
+.card {
+  margin-bottom: 1em;
+  background: #FFFFFF;
+}
+
+.card-header {
+  padding-block: .75rem;
+  padding-inline: .625rem;
+  display: flex;
+  align-items: center;
+  gap: .25rem
+}
+
+.name p {
+  margin: 0;
+  display: inline;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.location p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.post-img {
+  width: 100%
+}
+
+.post-icons {
+  display: flex;
+  padding: 1rem .625rem .5rem;
+  gap: 1rem;
+}
+
+.post-icon {
+  width: 24px;
+}
+
+.post-likes p{
+  padding-inline: .625rem;
+  margin: 0;
+}
+
+.post-comments p {
+  padding: .5rem .625rem;
+  margin: 0;
+}
+
+.post-comments p span {
+  font-weight: bold;
+}
